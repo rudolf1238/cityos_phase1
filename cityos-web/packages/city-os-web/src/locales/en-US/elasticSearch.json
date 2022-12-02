@@ -1,0 +1,14 @@
+{
+  "Add Record": "Add Record",
+  "Are you sure want to delete all of the data from {{deviceType}} sensor_ {{sensorId}} in Elastic?": "Are you sure want to delete all of the data from {{deviceType}} sensor: {{sensorId}} in Elastic?",
+  "Delete All": "Delete All",
+  "Last Record": "Last Record",
+  "Oldest Record": "Oldest Record",
+  "Present": "Present",
+  "Refresh": "Refresh",
+  "Sensor Name": "Sensor Name",
+  "Start At": "Start At",
+  "Subscribe": "Subscribe",
+  "Subscribed": "Subscribed",
+  "Type": "Type"
+}

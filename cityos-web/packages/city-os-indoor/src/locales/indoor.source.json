@@ -1,0 +1,18 @@
+{
+  "Indoor Map": "Indoor Map",
+  "Camera List": "Camera List",
+  "No Data": "No Data",
+  "Autoplay": "Autoplay",
+  "Set": "Set",
+  "Timer (ex_MM_SS)": "Timer (ex.MM:SS)",
+  "Timer Settings": "Timer Settings",
+  "Autoplay turned off_ The number of pinned cameras equals or more than split screens_": "Autoplay turned off. The number of pinned cameras equals or more than split screens.",
+  "Autoplay turned off_ The number of selected cameras equals or less than split screens_": "Autoplay turned off. The number of selected cameras equals or less than split screens.",
+  "Unable to connect to camera service_": "Unable to connect to camera service.",
+  "Device List": "Device List",
+  "Select FloorPlan File to Upload" : "Select FloorPlan File to Upload",
+  "File formats accepted are jpg or png. It will replace the current floorplan_": "File formats accepted are jpg or png. It will replace the current floorplan.",
+  "Browse": "Browse",
+  "Uploaded the file successfully": "Uploaded the file successfully",
+  "Could not upload the file": "Could not upload the file"
+}

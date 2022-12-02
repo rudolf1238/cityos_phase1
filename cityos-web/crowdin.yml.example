@@ -1,0 +1,65 @@
+project_id: '499446'
+api_token: ''
+base_path: './packages'
+base_url: 'https://api.crowdin.com'
+preserve_hierarchy: true
+
+languages_mapping: &languages_mapping
+  locale:
+    'en-US': 'en-US'
+    'zh-TW': 'zh-Hant-TW'
+
+translation_replace: &translation_replace
+  '.source.json': '.json'
+
+files:
+  [
+    {
+      source: '/city-os-common/src/locales/**/*.source.json',
+      translation: '/city-os-common/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-dashboard/src/locales/**/*.source.json',
+      translation: '/city-os-dashboard/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-events/src/locales/**/*.source.json',
+      translation: '/city-os-events/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-map/src/locales/**/*.source.json',
+      translation: '/city-os-map/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-surveillance/src/locales/**/*.source.json',
+      translation: '/city-os-surveillance/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-web/src/locales/**/*.source.json',
+      translation: '/city-os-web/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-indoor/src/locales/**/*.source.json',
+      translation: '/city-os-indoor/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+    {
+      source: '/city-os-sample/src/locales/**/*.source.json',
+      translation: '/city-os-sample/src/locales/%locale%/**/%original_file_name%',
+      translation_replace: *translation_replace,
+      languages_mapping: *languages_mapping,
+    },
+  ]

@@ -1,0 +1,12 @@
+{
+  "Account locked_ Please try again in 30 minutes_": "Account locked. Please try again in 30 minutes.",
+  "Binding": "Binding",
+  "DO NOT close this window_": "DO NOT close this window.",
+  "Email does not exist or password is invalid_": "Email does not exist or password is invalid.",
+  "Email sent": "Email sent",
+  "Log In": "Log In",
+  "Login Failed": "Login Failed",
+  "Please click the login verification link we’ve just sent to your email inbox_ <1>DO NOT close this window,</1> access will be granted upon login verification_": "Please click the login verification link we’ve just sent to your email inbox. <1>DO NOT close this window,</1> access will be granted upon login verification.",
+  "Resend email": "Resend email",
+  "Verification Successful_": "Verification Successful."
+}

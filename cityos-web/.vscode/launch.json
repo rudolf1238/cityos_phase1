@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:ˇ3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn debug",
+      "skipFiles": ["<node_internals>/**", "**/node_modules"],
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      }
+    },
+    {
+      "name": "Debug Client",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost",
+      "webRoot": "${workspaceFolder}/packages/city-os-web"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Both",
+      "configurations": ["Debug Server", "Debug Client"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Back to the Homepage": "回到首頁",
+  "Connection Failed": "連線失敗",
+  "Connection Successful": "連線成功",
+  "Create account": " 建立帳號",
+  "Invalid Link": "無效的連結",
+  "Invalid Reset Link": "重置代碼無效",
+  "LINE Notify connected successfully_": "LINE Notify的通知連線成功。",
+  "LINE Notify failed to connect_": "LINE Notify的通知連線失敗。",
+  "Sorry, this password reset link is no longer valid_ Please try <1>resetting your password</1> again_": "很抱歉，這個密碼重設連結已經無法使用。請到<1>重設密碼頁面</1>再試一次。",
+  "Tell us about yourself": "向我們介紹您自己",
+  "The invitation cannot be found with the provided invite token_": "這封邀請無效，無法使用提供的邀請token。"
+}

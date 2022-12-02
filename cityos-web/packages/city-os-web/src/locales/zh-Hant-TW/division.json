@@ -1,0 +1,15 @@
+{
+  "Add a Division": "新增部門",
+  "Division Management": "部門管理",
+  "Division Name": "部門名稱",
+  "Edit and show the division info": "編輯與顯示部門資訊",
+  "Edit Division": "編輯部門",
+  "Insert a division name": "輸入部門名",
+  "Parent Division": "上級管轄部門",
+  "Show the division structure here_": "顯示部門組織圖",
+  "Subtree number limited_ Unable to add a subtree to this division_": "新增子部門階層已達極限。無法再新增了喔！",
+  "The division has been added successfully_": "已成功新增部門。",
+  "The division has been deleted successfully_": "已成功刪除此部門。",
+  "This division will no longer be able to be used_": "這個部門已經無法使用。",
+  "Type \"DELETE\" to confirm_": "請輸入 \"DELETE\" 確認刪除動作。"
+}

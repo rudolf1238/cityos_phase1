@@ -1,0 +1,18 @@
+{
+  "{{count}} device": "{{count}} device",
+  "{{count}} device_plural": "{{count}} devices",
+  "Autoplay": "Autoplay",
+  "Autoplay turned off_ The number of pinned cameras equals or more than split screens_": "Autoplay turned off. The number of pinned cameras equals or more than split screens.",
+  "Autoplay turned off_ The number of selected cameras equals or less than split screens_": "Autoplay turned off. The number of selected cameras equals or less than split screens.",
+  "Camera List": "Camera List",
+  "Camera Map": "Camera Map",
+  "No Data": "No Data",
+  "selected": "selected",
+  "Set": "Set",
+  "Set Date and Time": "Set Date and Time",
+  "Selected Camera List": "Selected Camera List",
+  "Split Screen": "Split Screen",
+  "Timer (ex_MM_SS)": "Timer (ex.MM:SS)",
+  "Timer Settings": "Timer Settings",
+  "Unable to connect to camera service_": "Unable to connect to camera service."
+}

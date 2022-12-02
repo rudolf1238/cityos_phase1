@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Nest.js: debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run start:debug",
+      "cwd": "${workspaceRoot}/node"
+    },
+    {
+      "name": "Nest.js: hmr",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run start:hmr",
+      "cwd": "${workspaceRoot}/node"
+    }
+  ]
+}

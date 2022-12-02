@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "terminal.integrated.cwd": "node",
+  "typescript.tsdk": "./node/node_modules/typescript/lib",
+  "eslint.workingDirectories": [
+    "node"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

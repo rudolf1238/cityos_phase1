@@ -1,0 +1,39 @@
+{
+  "dateFormat": {
+    "common": {
+      "datePicker": "yyyy/MM/dd",
+      "dateTimeField": "yyyy/M/d HH:mm",
+      "dateTime": "yyyy/M/d HH:mm:ss",
+      "hourMinute": "HH:mm",
+      "monthDay": "M/d",
+      "download": "M/d HH:mm:ss"
+    },
+    "automation": {
+      "monthDay": "MMMdo"
+    },
+    "dashboard": {
+      "gadget": {
+        "bar": "MMM do hh:mm a",
+        "lineChart": "M/d"
+      }
+    },
+    "map": {
+      "schedule": {
+        "alignment": "MMMdo",
+        "dateSetting": "MMM do",
+        "options": {
+          "day": "do",
+          "month": "MMM"
+        },
+        "sets": "MMMdo"
+      }
+    },
+    "events": {
+      "tooltipHour": "M/d HH:mm"
+    },
+    "surveillance": {
+      "cutRangeLabel": "HH:mm:ss"
+    }
+  },
+  "mapURL": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+}

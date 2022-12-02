@@ -1,0 +1,12 @@
+{
+  "Account locked_ Please try again in 30 minutes_": "帳號鎖定。請30分鐘後再試試。",
+  "Binding": "綁定帳號",
+  "DO NOT close this window_": "請勿關閉這個視窗。",
+  "Email does not exist or password is invalid_": "這個郵件地址不存在或是您輸入的密碼不正確。",
+  "Email sent": "電子郵件已傳送",
+  "Log In": "登入",
+  "Login Failed": "登入失敗",
+  "Please click the login verification link we’ve just sent to your email inbox_ <1>DO NOT close this window,</1> access will be granted upon login verification_": "請點選我們剛剛送到您電子郵箱中的連結。<1>請勿關閉這個視窗，</1>待認證確認後即可繼續登入動作。",
+  "Resend email": "重新發送電子郵件",
+  "Verification Successful_": "驗證成功！"
+}

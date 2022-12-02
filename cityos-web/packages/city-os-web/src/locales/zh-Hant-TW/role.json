@@ -1,0 +1,14 @@
+{
+  "Role limited reached_ You can’t add more than 20 roles_": "角色設定已達上限。您不能新增超過20個以上的角色。",
+  "Role name": "角色名稱",
+  "Role name already in use_": "這個角色名稱已被使用。",
+  "Role name is required_": "需要角色名稱。",
+  "Role names cannot be duplicated_ Please choose another name_": "角色名稱不能重複。請取其他名稱。",
+  "Role Settings": "角色設定",
+  "Select at least one permission setting_": "請選擇至少一個權限。",
+  "Show the permission settings for different roles here_": "顯示不同的使用者與權限。",
+  "The role settings have been saved successfully_": "角色設定已成功儲存。",
+  "This role has been deleted successfully_": "已成功刪除此角色。",
+  "This role will no longer be available for use_": "這個角色無法再使用。",
+  "Untitled": "未命名"
+}

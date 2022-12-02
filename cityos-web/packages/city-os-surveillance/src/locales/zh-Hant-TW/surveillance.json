@@ -1,0 +1,17 @@
+{
+  "{{count}} device": "{{count}} 個裝置",
+  "Autoplay": "自動播放",
+  "Autoplay turned off_ The number of pinned cameras equals or more than split screens_": "自動播放功能已為您關閉，因為釘選的攝影機數量大於或等於分割畫面的數量。",
+  "Autoplay turned off_ The number of selected cameras equals or less than split screens_": "自動播放功能已為您關閉，因為選擇的攝影機數量小於或等於分割畫面的數量。",
+  "Camera List": "監視器列表",
+  "Camera Map": "監視器地圖",
+  "No Data": "沒有數據",
+  "selected": "已選取",
+  "Set": "設定",
+  "Set Date and Time": "設定日期與時間",
+  "Selected Camera List": "選取的監視器清單",
+  "Split Screen": "分割畫面",
+  "Timer (ex_MM_SS)": "計時器 (如.分分:秒秒)",
+  "Timer Settings": "計時器設定",
+  "Unable to connect to camera service_": "無法取得設定檔"
+}

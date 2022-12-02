@@ -1,0 +1,14 @@
+{
+  "Role limited reached_ You can’t add more than 20 roles_": "Role limited reached. You can’t add more than 20 roles.",
+  "Role name": "Role name",
+  "Role name already in use_": "Role name already in use.",
+  "Role name is required_": "Role name is required.",
+  "Role names cannot be duplicated_ Please choose another name_": "Role names cannot be duplicated. Please choose another name.",
+  "Role Settings": "Role Settings",
+  "Select at least one permission setting_": "Select at least one permission setting.",
+  "Show the permission settings for different roles here_": "Show the permission settings for different roles here.",
+  "The role settings have been saved successfully_": "The role settings have been saved successfully.",
+  "This role has been deleted successfully_": "This role has been deleted successfully.",
+  "This role will no longer be available for use_": "This role will no longer be available for use.",
+  "Untitled": "Untitled"
+}

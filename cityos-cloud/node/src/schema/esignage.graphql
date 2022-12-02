@@ -1,0 +1,226 @@
+type Query {
+  getTemplateType(groupId:ID!, page:Int = 1, pageSize:Int, filter: Filter): GetEsignageTemplateType
+  getWeatherStyle(groupId:ID!, page:Int = 1, pageSize:Int,, filter: Filter): GetWeatherStyle
+  getLanguage(groupId:ID!, page:Int = 1, pageSize:Int, filter: Filter): GetLanguage
+  getCity(groupId:ID!, page:Int = 1, pageSize:Int, filter: CityFilter): GetCity
+  getContentType(groupId:ID!, page:Int = 1, pageSize:Int, filter: Filter): GetContentType
+  getTemplate(groupId:ID!, page:Int = 1, pageSize:Int, filter: Filter): GetTemplate
+  getDivision(groupId: ID!, filter: Filter): GetDivision
+  getTemplateContent(groupId: ID!, templateId: ID!):GetTemplateContent
+  getPlayerData(groupId: ID!, size: Int = 10, after: String, before: String): DeviceConnection!
+}
+type Mutation{
+  addTemplate(groupId:ID!, templateInput:TemplateInput!): String
+  updateTemplate(groupId:ID!, templateId: String!, updateTemplateInput: UpdateTemplateInput!): Boolean
+  updateTemplateContent(groupId:ID!, templateId: String!, updateTemplateContentInput: UpdateTemplateContentInput!): Boolean 
+  deleteTemplate(groupId:ID!, templateId: String!): Boolean
+}
+type GetEsignageTemplateType {
+  esignageTemplateTypeOutput: [EsignageTemplateTypeOutput]!
+  totalCount:Int!
+}
+type EsignageTemplateTypeOutput {
+  id: String!
+  typeName: String!
+  resolution: String
+  description: String
+  templateImagePath_Light: String!
+  templateImagePath_Dark: String!
+  status: Int!
+}
+type GetTemplateContent {
+  id:String!
+  name: String!
+  description: String
+  group: String
+  templateContent: [TPContent]!
+}
+type TPContent {
+  contentId: String!
+  templateId: String!
+  contentTypeId: ID!
+  contentName: String!
+  tag: String
+  x: Int
+  y: Int
+  width: Int
+  height: Int
+  templateContentDetail: TPContentDetail!
+}
+type TPContentDetail {
+  weather: WeatherDeatail
+  media: [String]
+  webpage: [WebpageDetail]
+  cam: [IpCamDetail]
+}
+type WeatherDeatail {
+  id:String!
+  weatherStyleId: ID!
+  temperatureUnit: String!
+  windSpeedUnit: String!
+  languageId: ID!
+  backgroundColor: String
+  durations: Int
+  citys: [ID]
+}
+type WebpageDetail {
+  id:String!
+  webUrl: String!
+  playTime: Int
+}
+type IpCamDetail {
+  id:String!
+  camName: String!
+  rtspUrl: String!
+  durations: Int
+}
+type GetTemplate {
+  templateOutput: [TemplateOutput]!
+  totalCount:Int!
+}
+type TemplateOutput {
+  id: String!
+  name: String!
+  description: String
+  backgroundColor: String
+  group: ID
+  groupName: String
+  templateTypeId: String
+  typeName: String
+  typeResolution: String
+}
+type GetWeatherStyle {
+  weatherStyleOutput:[WeatherStyleOutput]!
+  totalCount:Int!
+}
+type WeatherStyleOutput {
+  id: String!
+  style: String!
+  styleImage: ID
+  tag: String
+  status: Int!
+}
+type GetLanguage {
+  languageOutput:[LanguageOutput]!
+  totalCount:Int!
+}
+type LanguageOutput {
+  id: String!
+  languageCode: String!
+  status: Int!
+  languageName: String
+}
+type GetCity {
+  cityOutput:[CityOutput]!
+  totalCount:Int!
+}
+type CityOutput {
+  id: String!
+  cityName: String!
+  region: String!
+  status: Int!
+}
+input CityFilter {
+  keyword: String
+  sortField: CityField
+  sortOrder: SortOrder
+}
+enum CityField {
+  ID
+  CITYNAME
+  NAME
+}
+type GetContentType {
+  contentTypeOutput:[ContentTypeOutput]!
+  totalCount:Int!
+}
+type ContentTypeOutput {
+  id: String!
+  typeName: String!
+  description: String
+  status: Int!
+}
+type GetDivision {
+  divisionOutput:[DivisionOutput]!
+  totalCount:Int!
+}
+type DivisionOutput {
+  id: String!
+  groupName: String!
+}
+input Filter {
+  keyword: String
+  sortField: Sort
+  sortOrder: SortOrder
+}
+enum Sort {
+  ID
+  TYPENAME
+  STATUS
+}
+input UpdateTemplateInput {
+  name: String!
+  description: String!
+  templateTypeId: ID!
+  backgroundColor: String
+  group:String!
+}
+input TemplateInput {
+  name: String!
+  templateType: ID!
+  description: String!
+  backgroundColor: String
+  templateContent: [TemplateContent!]
+}
+input TemplateContent {
+  contentTypeId: ID!
+  contentName: String!
+  tag: String
+  x: Int
+  y: Int
+  width: Int
+  height: Int
+  contentDeatail:ContentDetail!
+}
+input ContentDetail {
+  weather: Weather
+  media: [Media]
+  webpage: [Webpage]
+  ipCam: [IpCam]
+}
+input Weather {
+  weatherStyleId: ID!
+  temperatureUnit: String!
+  windSpeedUnit: String!
+  languageId: ID!
+  backgroundColor: String
+  durations: Int
+  citys: [ID]
+}
+input Media {
+  mediaId: ID!
+  imagePlayDurations: Int
+}
+input Webpage {
+  webUrl: String!
+  playTime: Int
+}
+input IpCam {
+  camName: String!
+  rtspUrl: String!
+  durations: Int
+}
+input UpdateTemplateContentInput {
+  updateTemplateContent:[UpdateTemplateContent!]
+}
+input UpdateTemplateContent {
+  contentId:ID!
+  contentTypeId: ID!
+  contentName: String!
+  tag: String
+  x: Int
+  y: Int
+  width: Int
+  height: Int
+  contentDeatail:ContentDetail!
+}

@@ -1,0 +1,20 @@
+{
+  "Dashboard": "Dashboard",
+  "Device": "Device",
+  "Elastic Search": "Elastic Search",
+  "Empty division": "Empty division",
+  "Events": "Events",
+  "IVS": "IVS",
+  "Surveillance": "Surveillance",
+  "Area":"Area",
+  "Advertisement":"Advertisement",
+ 
+  "WIFI": "WIFI",
+  "Logout": "Logout",
+  "Smart Pole": "Smart Pole",
+  "User": "User",
+  
+  "Info": "異常設備管理",
+  "Indoor Map": "室內地圖",  
+  "ESignage": "ESignage"
+}

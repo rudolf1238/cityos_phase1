@@ -1,0 +1,14 @@
+{
+  "Add Record": "新增紀錄",
+  "Are you sure want to delete all of the data from {{deviceType}} sensor_ {{sensorId}} in Elastic?": "請問您確定要刪除在Elastic中，所有來自的{{deviceType}}: {{sensorId}}感應器的資料嗎？",
+  "Delete All": "全部刪除",
+  "Last Record": "最近紀錄",
+  "Oldest Record": "最早的紀錄",
+  "Present": "現在",
+  "Refresh": "重新整理",
+  "Sensor Name": "感測器名稱",
+  "Start At": "開始時間",
+  "Subscribe": "訂閱",
+  "Subscribed": "已訂閱",
+  "Type": "類別"
+}

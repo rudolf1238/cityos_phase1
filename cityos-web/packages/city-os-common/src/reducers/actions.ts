@@ -1,0 +1,25 @@
+enum ReducerActionType {
+  UserLogin,
+  UserLogout,
+  SetDeviceToken,
+  RemoveDeviceToken,
+  RefreshToken,
+  SetGroupId,
+  ShowSnackbar,
+  HideSnackbar,
+  ShowExitDialog,
+  HideExitDialog,
+  DisableExitDialog,
+  EnableExitDialog,
+  SetProfile,
+  SetPermissionGroup,
+  SetDivisionGroup,
+  ResetDivisionGroup,
+  SetJoinedGroups,
+  StartDownload,
+  UpdateDownload,
+  EndDownload,
+  CancelDownload,
+}
+
+export default ReducerActionType;

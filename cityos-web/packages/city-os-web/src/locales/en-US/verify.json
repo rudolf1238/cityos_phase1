@@ -1,0 +1,13 @@
+{
+  "Back to the Homepage": "Back to the Homepage",
+  "Connection Failed": "Connection Failed",
+  "Connection Successful": "Connection Successful",
+  "Create account": "Create account",
+  "Invalid Link": "Invalid Link",
+  "Invalid Reset Link": "Invalid Reset Link",
+  "LINE Notify connected successfully_": "LINE Notify connected successfully.",
+  "LINE Notify failed to connect_": "LINE Notify failed to connect.",
+  "Sorry, this password reset link is no longer valid_ Please try <1>resetting your password</1> again_": "Sorry, this password reset link is no longer valid. Please try <1>resetting your password</1> again.",
+  "Tell us about yourself": "Tell us about yourself",
+  "The invitation cannot be found with the provided invite token_": "The invitation cannot be found with the provided invite token."
+}

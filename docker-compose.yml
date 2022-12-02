@@ -1,0 +1,67 @@
+version: '3.9'
+
+services:
+  web_3000:
+    container_name: cityos-web-v2_3000
+    image: cityos-web-v2:latest
+    build:
+      context: ./CityOS-Web-V2
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    networks:
+      - city-os
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  cloud_4000:
+    container_name: cityos-cloud_4000
+    image: cityos-cloud:latest
+    build:
+      context: ./CityOS-Cloud
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - 4000:4000
+    volumes:
+      - ./files:/files
+    networks:
+      - city-os
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  cloud_4001:
+    container_name: cityos-cloud_4001
+    image: cityos-cloud:latest
+    build:
+      context: ./CityOS-Cloud
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - 4001:4000
+    volumes:
+      - ./files:/files
+    networks:
+      - city-os
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  redis:
+    container_name: redis
+    image: redis:latest
+    tty: true
+    stdin_open: true
+    ports:
+      - 6379:6379
+    networks:
+      - city-os
+    restart: unless-stopped
+
+networks:
+  city-os:
+    driver: bridge
+

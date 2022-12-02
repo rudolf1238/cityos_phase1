@@ -1,0 +1,72 @@
+HOST=0.0.0.0
+PORT=4000
+NODE_ENV=production
+;MONGODB_URI=mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo/cityos?replicaSet=rs0
+MONGODB_URI=mongodb+srv://cityos:1qaz2wsx3edc@cluster0.wuan7wv.mongodb.net/cityos
+REDIS_URI=redis://:3ZOUW9J25AdqBYRzLTF9RiwhKIkDvVSaIAzCaKjCMP8=@dns-cityos.redis.cache.windows.net:6379
+
+ACCESS_TOKEN_EXPIRED_IN_SECONDS=18000
+REFRESH_TOKEN_EXPIRED_IN_SECONDS=72000
+; OAuth2 (No Need To Change)
+OFFICIAL_CLIENT_ID=abc
+OFFICIAL_CLIENT_SECRET=def
+OFFICIAL_REDIRECT_URI=http://cityos-cht.azurewebsites.net/map
+
+CHTIOT_SERVER_URI=https://iot.cht.com.tw/iot/v1
+CHTIOT_MQTT_URI=mqtt://iot.cht.com.tw:1883
+; minyuchen apply
+GOOGLE_SERVER_URI=https://maps.googleapis.com/maps/api
+GOOGLE_SERVER_API_KEY=AIzaSyBWgbXxwH3xOvuJTy01LMounifJ8ybQlvI
+CHTIOT_AEP_SERVER_URI=https://iot.cht.com.tw/apis/CHTIoT/aep/v1
+CHTIOT_AEP_API_KEY=PspV3oudkVCmhFhqdcErlfW9GsdE8Ann
+
+CITYOS_API_PATH=/cht-cityosGraphQL
+VERIFICATION_CODE_EXPIRED_IN_SECONDS=600
+; minyuchen apply
+SMTP_MAIL_SERVER_HOST=msr.hinet.net
+SMTP_MAIL_SERVER_PORT=587
+SMTP_MAIL_SERVER_USERNAME=cityos.cht@msa.hinet.net
+SMTP_MAIL_SERVER_PASSWORD=!QAZ2wsx3edc
+SMTP_MAIL_SERVER_DEFALUT_FROM='"CityOS Notification" <cityos.cht@msa.hinet.net>'
+
+
+CITYOS_WEB_URI=http://cityos-cht.azurewebsites.net/
+
+; default root username and password
+ROOT_USER_NAME=admin
+ROOT_USER_EMAIL=cityos.cht@msa.hinet.net
+ROOT_USER_PASSWORD=1qaz2wsx3edc
+ROOT_USER_PHONE=+886911769751
+ROOT_GROUP_NAME=CHT
+
+; Copy CHTISS
+CHT_CAMERA_SERVER_URI=https://api.ivs.hinet.net
+CHT_CAMERA_SERVER_API_KEY=wuBkwWxLel6dfNk9597Y2Ak0zsEJhXQc
+CHT_CAMERA_SERVER_USERNAME=cat-webapi
+CHT_CAMERA_SERVER_PASSWORD=cat-webapi
+
+CHT_CAMERA_SERVER_TIMEZONE=UTC+8
+; minyuchen apply
+GOOGLE_RECAPTCHA_SECRET_KEY=6LfXGqghAAAAAOZDDZI-5fRpToY9phj2rdpDMr3g
+
+VERIFICATION_CODE_EXPIRED_FOR_REGISTER_IN_SECONDS=259200
+MAIL_RECEIVER_FOR_CUSTOMER_SUPPORT=
+LANGUAGE_FOR_ADDRESSES_LOOK_UP=zh-tw
+ELASTICSEARCH_URI=https://4925ef48045645608c2cdf77824dde91.japaneast.azure.elastic-cloud.com:9200
+
+ELASTICSEARCH_USERNAME=elastic
+ELASTICSEARCH_PASSWORD=8R7dh0pgKTJypN3Rha7gUDVU
+ELASTICSEARCH_NUMBER_OF_SHARDS=2
+ELASTICSEARCH_NUMBER_OF_REPLICAS=3
+; minyuchen apply
+LINE_CHANNEL_ACCESS_TOKEN=iXCD9Vg/Dm8G4N+4V4PrnDZq533UreLg9DYqXstGHmt/GB1r1fvmbc1Kw3U2WBZdPOt0qzQrQ1XseZb83OuDalbTPrqm5C4wrWHzjSlsh/CPjV1mLjFL7WgmPc/HT9Tz5BEIOFBtc19UJ7s889wu0gdB04t89/1O/w1cDnyilFU=
+LINE_CHANNEL_SECRET=ac69f8095243b57be2eb19440f71ee30
+
+LINE_ACCOUNT_LINK_BIND_URI=http://cityos-cht.azurewebsites.net/line-binding?LinkToken
+
+; minyuchen apply
+LINE_NOTIFY_CLIENT_ID=Yy9dMRd0EVCx4rdNhD8pi1
+LINE_NOTIFY_CLIENT_SECRET=28iMDwMjOX7UEeSm9Xp2L45AZTE4iVUpszNpKBzYmHB
+
+LINE_NOTIFY_REDIRECT_URI=http://cityos-cht.azurewebsites.net/line-notify
+

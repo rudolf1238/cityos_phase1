@@ -1,0 +1,34 @@
+{
+  "dateFormat": {
+    "common": {
+      "datePicker": "datePicker"
+    },
+    "dashboard": {
+      "gadget": {
+        "bar": "bar",
+        "lineChart": "lineChart"
+      }
+    },
+    "elasticSearch": {
+      "record": "record"
+    },
+    "map": {
+      "schedule": {
+        "alignment": "alignment",
+        "dateSetting": "dateSetting",
+        "options": {
+          "day": "day",
+          "month": "month"
+        },
+        "sets": "sets"
+      }
+    },
+    "events": {
+      "dateTime": "dateTime",
+      "filter": "filter",
+      "tooltipHour": "tooltipHour",
+      "tooltipDay": "tooltipDay"
+    }
+  },
+  "mapURL": "mapURL"
+}

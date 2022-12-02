@@ -1,0 +1,107 @@
+type Query {
+  searchCompanys(
+    groupId: ID!
+    email: String
+    filter: WifiFilter
+    currentPage: Int = 1
+    pageCount: Int = 10
+  ): ResponseWIFI
+
+  searchCompanyAdvance(groupId: ID!, companyId: String): DetailCompanyAdvance
+}
+
+type ResponseWIFI {
+  divisions: [Detaildivision]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type Detaildivision {
+  node: Group
+}
+type Mutation {
+  addCompany(
+    groupId: ID!
+    divisionId: ID!
+    name: String
+    logo: String
+    line: String
+    url: String
+    ssid: String
+    serviceIntroduction: String
+    serviceIntroductionEn: String
+    accessTime: Int
+    dailyAccess: Int
+    accessLimit: Int
+    idleTimeout: Int
+    terms: String
+    termsEn: String
+    privacyTerms: String
+    privacyTermsEn: String
+    downloadSpeed: Int
+    uploadSpeed: Int
+    passShowTime: Int
+  ): String
+
+  deleteCompany(groupId: ID!, divisionId: ID!): [String]
+
+  uploadFile(file: Upload!): String!
+  # uploadFile(groupId: ID!, file: Upload!): String!
+  editCompany(
+    groupId: ID!
+    divisionId: ID!
+    name: String
+    logo: String
+    line: String
+    url: String
+    ssid: String
+    serviceIntroduction: String
+    serviceIntroductionEn: String
+    accessTime: Int
+    dailyAccess: Int
+    accessLimit: Int
+    idleTimeout: Int
+    terms: String
+    termsEn: String
+    privacyTerms: String
+    privacyTermsEn: String
+    downloadSpeed: Int
+    uploadSpeed: Int
+    passShowTime: Int
+  ): String
+}
+
+input WifiFilter {
+  keyword: String
+  sortField: WifiSortField
+  sortOrder: SortOrder
+}
+
+enum WifiSortField {
+  ID
+  COMPANYID
+  NAME
+}
+
+type DetailCompanyAdvance {
+  node: CompanyAdvance
+}
+
+type CompanyAdvance {
+  ssid: String
+  serviceIntroduction: String
+  serviceIntroductionEn: String
+  accessTime: Int
+  dailyAccess: Int
+  accessLimit: Int
+  idleTimeout: Int
+  terms: String
+  termsEn: String
+  privacyTerms: String
+  privacyTermsEn: String
+  downloadSpeed: Int
+  uploadSpeed: Int
+  passShowTime: Int
+}
+
+scalar Upload

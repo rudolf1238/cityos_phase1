@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "city-os-abnormal/*": ["../../city-os-abnormal/src/*"],      
+      "city-os-common/*": ["../../city-os-common/src/*"],
+      "city-os-dashboard/*": ["../../city-os-dashboard/src/*"],
+      "city-os-map/*": ["../../city-os-map/src/*"],
+      "city-os-surveillance/*": ["../../city-os-surveillance/src/*"],
+      "city-os-events/*": ["../../city-os-events/src/*"],
+      "city-os-wifi/*": ["../../city-os-wifi/src/*"],
+      "city-os-indoor/*": ["../../city-os-indoor/src/*"],
+      "city-os-automation/*": ["../../city-os-automation/src/*"],
+      "city-os-sample/*": ["../../city-os-sample/src/*"],
+      "city-os-esignage/*": ["../../city-os-esignage/src/*"],
+    }
+  },
+  "include": ["src", "*.d.ts", "../../*.d.ts"],
+  "exclude": ["node_modules"]
+}
